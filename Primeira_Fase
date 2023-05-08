@@ -1,0 +1,179 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <locale.h>
+char matriz [15][15];
+  int fim=0;
+  char tecla;
+  int x=7;
+  int y=7;
+  char chave='@';
+  char porta='D';
+int main()
+{
+	setlocale(LC_ALL, "Portuguese");
+	int escolha_menu;
+	int lixo;
+	while(escolha_menu != 3)
+	{
+
+		system("cls || clear");
+		printf("*  #####    ##   ##  ##   ##    ####   #######   #####   ##   ##             ####   ######     ##     ##   ##  ####     #######  ###### *\n");
+		printf("*   ## ##   ##   ##  ###  ##   ##  ##   ##   #  ##   ##  ###  ##            ##  ##   ##  ##   ####    ##   ##   ##       ##   #   ##  ## *\n");
+		printf("*   ##  ##  ##   ##  #### ##  ##        ## #    ##   ##  #### ##           ##        ##  ##  ##  ##   ##   ##   ##       ## #     ##  ## *\n");
+		printf("*   ##  ##  ##   ##  ## ####  ##        ####    ##   ##  ## ####           ##        #####   ##  ##   ## # ##   ##       ####     ##### *\n");
+		printf("*   ##  ##  ##   ##  ##  ###  ##  ###   ## #    ##   ##  ##  ###           ##        ## ##   ######   #######   ##   #   ## #     ## ## *\n");
+		printf("*   ## ##   ##   ##  ##   ##   ##  ##   ##   #  ##   ##  ##   ##            ##  ##   ##  ##  ##  ##   ### ###   ##  ##   ##   #   ##  ## *\n");
+		printf("*  #####     #####   ##   ##    #####  #######   #####   ##   ##             ####   #### ##  ##  ##   ##   ##  #######  #######  #### ## *\n");
+		printf("\n \n \n \n");
+		printf("|==================================================================================|\n \n \n");
+		printf(" 1.JOGAR \n 2. TUTORIAL \n 3. SAIR \n \n \n");
+		printf("|==============================================================================|\n \n");
+		printf("O QUE VOCÊ DESEJA FAZER? (1, 2, 3 (sair)): ");
+		scanf("%d", &escolha_menu);
+
+		system("cls || clear");
+
+		switch(escolha_menu)
+		{
+
+		case (1):
+			system("cls || clear");
+			Jogo();
+			break;
+		case (2):
+			system("cls || clear");
+			printf("Esse jogo consiste em trás níveis que vão aumentando de dificuldade ao passar de um para outro,\no seu objetivo é abrir a porta final de cada nével e escapar.\n#################\nMovimentação:\nW: anda para cima\nA: anda para esquerda\nS: anda para trás\nD: anda para direita\n\n");
+			printf("\nDigite 1 e dê enter para continuar...");
+			scanf("%d", &lixo);
+			break;
+		case (3):
+			system("cls || clear");
+			printf("Até mais!\nDigite 1 e dê enter\n");
+			scanf("%d", &lixo);
+			break;
+		default:
+			printf("escolha inválida!\nTente novamente.");
+			printf("\nDigite 1 e dê enter");
+			scanf("%d", &lixo);
+			break;
+				
+		}
+			
+		}
+
+
+return 0;
+}
+
+
+void Jogo()
+{
+	while(fim==0){
+	
+		mapa(matriz,x,y,chave,porta);
+	   	
+		movimentacao();	
+    	
+	}
+		
+}
+
+void mapa(char matriz[15][15],int x, int y, char chave, char porta){
+	
+	int i,j;
+	
+		for(i = 0; i < 15; i++)
+    {
+        for(j = 0; j < 15; j++)
+        {	
+        	if(i==y && j==x){
+				matriz[i][j]='&';
+			}else{
+        		if(i==14 && j==7){
+					matriz[i][j]=porta;
+				}else{ 
+        			if(i==3 && j==7){
+						matriz[i][j]=chave;
+					}else{
+				
+			
+   					if(i==0 || i==14){
+			 	 	 	 	 	 matriz[i][j]='*';printf("\n");
+				
+					}else{
+						if(j==0 || j==14){
+							matriz[i][j]='*';
+						}else{
+					
+							matriz[i][j]=' ';
+					    		}
+				
+				
+	    		        }		
+					}
+				}
+			}
+        }
+    }
+    system("clear || cls");
+    	for(i = 0; i < 15; i++)
+    	{
+        	for(j = 0; j < 15; j++)
+        	{
+            printf("%c", matriz[i][j]);
+        	}
+        	printf("\n");
+    	}
+}
+void movimentacao(){
+	scanf("%c", &tecla);
+    	switch(tecla){
+			case 'w':
+				if(y==1){
+					
+				}else{
+					y--;	
+				}
+					
+				
+				break;
+			case 's':
+				if((y==13 && matriz[14][7]=='D')&& (x!=7 || x==7)){
+					
+				}else{
+					if(y==13 && x!=7){
+						
+					}else{
+						
+						y++;
+						if(y==14 && x==7){
+							fim=1;
+						}else{}
+					}
+				}
+				break;	
+			case 'a':
+				if(x==1){
+					
+				}else{
+					x--;
+				}
+				break;
+			case 'd':
+				if(x==13){
+					
+				}else{
+					x++;
+				}
+				break;
+			case 'i':
+				if(x==7 && y==3){
+					chave=' ';
+					porta='=';
+				}else{}
+			default:
+				break;
+
+		}
+}
