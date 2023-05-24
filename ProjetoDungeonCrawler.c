@@ -479,6 +479,7 @@ void derrotaMonstro()
 
 void derrotaEspinho()
 {
+	system("cls || clear");
 	printf("    ####     ####       ######     \n");
 	printf("    ####     ####     ##########   \n");
 	printf("    ####     ####    ####    ####   \n");
@@ -557,6 +558,9 @@ void derrotaEspinho()
 	printf("\t\t  //**  ////**  /**//////**  /**   /    /**  /**            //**     **     //****     /**        /**  //** \n");
 	printf("\t\t   //********   /**     /**  /**        /**  /********       //*******       //**      /********  /**   //**\n");
 	printf("\t\t    ////////    //      //   //         //   ////////         ///////         //       ////////   //     // \n");	
+	printf("\n\t\t\t\t\t\t     TENTE NOVAMENTE DIGITANDO 1 E APERTANDO ENTER.");
+	printf("\n\t\t\t\t\t\t\t=> ");
+	scanf("%d", &lixo);
 }
 
 
