@@ -27,10 +27,6 @@ initconio();
   	char chave2=' ';
   	char chave3=' ';
   	
-  	//char carta1= 'X';
-  	//char carta2= 'X';
-  	//char carta3= 'X';
-  	
   	char porta1='D';
   	char porta2='D';
   	char porta3='D';
@@ -53,7 +49,7 @@ initconio();
 	int eminemX3=38;
 	int eminemY3=55;
 	int monstro2X= 30;
-	int monstro2Y= 10;
+	int monstro2Y= 31;
 	
 	char tp = ' ';
 	
@@ -68,10 +64,45 @@ int main()
 	while(escolha_menu != 3)
 	{
 		fim1=0;
+  		fim2=0;
+  		fim3=0;
+  	
+ 		x2=15;
+		y2=15;
+		x3=30;
+  		y3=30;
+  		
+  		chave2=' ';
+  		chave3=' ';
+  		
+ 		porta2='D';
+  		porta3='D';
+  		
+  		botao2='O';
+  		botao3='O';
+  		
+  		espinho2='#';
+		espinho3='#';
+		caixa_espinhos = '#';
+		espinhos_chave = ' ';
+		
+  		eminemX2=18;
+		eminemY2=25;	
+  		eminem2X2=5;
+		eminem2Y2=7;
+  		eminem3X2=6;
+		eminem3Y2=24;
+	
+		eminemX3=38;
+		eminemY3=55;
+		monstro2X= 30;
+		monstro2Y= 10;
+		tp = ' ';
  		x1=7;
   		y1=7;
   		chave1='@';
   		porta1='D';
+  		lifes=3;
 	
 
 		system("cls || clear");		
@@ -167,8 +198,6 @@ void tutorial()
 	printf("\t           |       4- So pode sair da sala se passar pela porta destrancada.                                                |\n");
 	printf("\t           |       5- Existe apenas uma chave por mapa que sempre abrira a porta final.                                     |\n");
 	printf("\t           |       6- O teletransporte funciona como entrada e saida, se passar por '>' saira por '<' e vice versa.         |\n");
-//	printf("\t           |       7- As cartas sao importante para a historia do jogo, interaja com elas mesmo que nao alterem a           |\n");
-//	printf("\t           |          nada no jogo.                                                                                         |\n");
 	printf("\t           |       7- Voce so interage com um elemento se entiver em cima dele e apertar a tecla 'i'.                       |\n");
 	printf("\t           |                                                                                                                |\n");
 	printf("\t           |                                                                                                                |\n");
@@ -194,9 +223,9 @@ void tutorial()
 	printf("   |  | |   |   --'  |  |_/   |                                                ||   O --------> Simbolo que representa o botao;             \n");
 	printf("   \\---|----^---|----^--------/                                                ||   # --------> Simbolo que representa os espinho           \n");
 	printf("       |        |____-> SEU PERSONAGEM SE MOVIMENTA PARA BAIXO                 ||   > --------> Simbolo que representa o teletransporte;    \n");  
-	printf("       |                                                                       ||   ¬ --------> Simbolo que representa o monstro nivel 1;   \n");         
+	printf("       |                                                                       ||   E --------> Simbolo que representa o monstro nivel 1;   \n");         
 	printf("       |____-> SEU PERSONAGEM SE MOVIMENTA PARA A ESQUERDA                     ||   K --------> Simbolo que representa o monstro nivel 2;   \n");
-//	printf("                                                                               ||   X --------> Simbolo que representa a carta              \n");
+	printf("                                                                               ||                                                           \n");
 	printf("           /--------\\                                                          ||                                                           \n");
 	printf("       	   |  ---   |                                                          ||                                                           \n");
 	printf("           |   |    |                                                          ||                                                           \n");
@@ -558,9 +587,8 @@ void derrotaEspinho()
 	printf("\t\t  //**  ////**  /**//////**  /**   /    /**  /**            //**     **     //****     /**        /**  //** \n");
 	printf("\t\t   //********   /**     /**  /**        /**  /********       //*******       //**      /********  /**   //**\n");
 	printf("\t\t    ////////    //      //   //         //   ////////         ///////         //       ////////   //     // \n");	
-	printf("\n\t\t\t\t\t\t     TENTE NOVAMENTE DIGITANDO 1 E APERTANDO ENTER.");
-	printf("\n\t\t\t\t\t\t\t=> ");
-	scanf("%d", &lixo);
+	
+	
 }
 
 
@@ -584,15 +612,23 @@ void Jogo()
 		movimentacao2();
 	}
 	
+	if(fim3 == 0 && fim2==1 && fim1==1)
+	{
 	descanso();
-	while(fim3 == 0) //dinamica da fase 3
+	monstro2X=30; 
+	monstro2Y=31; 
+	while(fim3 == 0 && fim2==1 && fim1==1) //dinamica da fase 3
 	{
 
-		mapa3(matriz3, x3, y3, chave3, porta3, botao3, eminemY3, eminemX3, espinho3);
+		mapa3(matriz3, x3, y3, chave3, porta3, botao3, eminemY3, eminemX3, espinho3, monstro2X, monstro2Y);
 
 		movimentacao3();
 	}	
+	if( fim1==1 &&fim2==1 && fim3==1)
+	{
 	vitoria();		
+    }else{}
+	}else{}
 }
 
 //funções da fase 1
@@ -1015,6 +1051,7 @@ void movimentacao2()
 									printf("\nDigite 1 e pressione enter para continuar...");
 									scanf("%d", &lixo);
 									fim2=1;
+									fim1=0;
 									break;
 								} 
 								else {}
@@ -1043,6 +1080,7 @@ void movimentacao2()
 										printf("\nDigite 1 e pressione enter para continuar...");
 										scanf("%d", &lixo);
 										fim2=1;
+										fim1=0;
 										break;
 									} 
 									else {}
@@ -1082,6 +1120,7 @@ void movimentacao2()
 								printf("\nDigite 1 e pressione enter para continuar...");
 								scanf("%d", &lixo);
 								fim2=1;
+								fim1=0;
 								break;
 							} 
 							else {}
@@ -1110,6 +1149,7 @@ void movimentacao2()
 									printf("\nDigite 1 e pressione enter para continuar...");
 									scanf("%d", &lixo);
 									fim2=1;
+									fim1=0;
 									break;
 								} 
 								else {}
@@ -1148,6 +1188,7 @@ void movimentacao2()
 								printf("\nDigite 1 e pressione enter para continuar...");
 								scanf("%d", &lixo);
 								fim2=1;
+								fim1=0;
 								break;
 							} 
 							else {}
@@ -1176,6 +1217,7 @@ void movimentacao2()
 									printf("\nDigite 1 e pressione enter para continuar...");
 									scanf("%d", &lixo);
 									fim2=1;
+									fim1=0;
 									break;
 								} 
 								else {}
@@ -1213,6 +1255,7 @@ void movimentacao2()
 								printf("\nDigite 1 e pressione enter para continuar...");
 								scanf("%d", &lixo);
 								fim2=1;
+								fim1=0;
 								break;
 							} 
 							else {}
@@ -1241,6 +1284,7 @@ void movimentacao2()
 									printf("\nDigite 1 e pressione enter para continuar...");
 									scanf("%d", &lixo);
 									fim2=1;
+									fim1=0;
 									break;
 								} 
 								else {}
@@ -1415,7 +1459,7 @@ void mapa3(char matriz3[60][60], int x3, int y3, char chave3, char porta3, char 
 
 				if (i == eminemY3 && j == eminemX3 )
 				{
-					matriz3[i][j] = '¬';
+					matriz3[i][j] = 'E';
 				}
 				else
 				{
@@ -1659,6 +1703,7 @@ void movimentacao3()
 						printf("\nDigite 1 e pressione enter para continuar...");
 						scanf("%d", &lixo);
 						fim3 = 1;
+						fim1=0;
 						break;
 					}
 					else {}
@@ -1686,6 +1731,7 @@ void movimentacao3()
 						printf("\nDigite 1 e pressione enter para continuar...");
 						scanf("%d", &lixo);
 						fim3 = 1;
+						fim1=0;
 						break;
 					}
 					else {}
@@ -1725,6 +1771,7 @@ void movimentacao3()
 					printf("\nDigite 1 e pressione enter para continuar...");
 					scanf("%d", &lixo);
 					fim3 = 1;
+					fim1=0;
 					break;
 				}
 				else {}
@@ -1754,6 +1801,7 @@ void movimentacao3()
 					printf("\nDigite 1 e pressione enter para continuar...");
 					scanf("%d", &lixo);
 					fim3 = 1;
+					fim1=0;
 					break;
 				}
 				else {}
@@ -1792,6 +1840,7 @@ void movimentacao3()
 						printf("\nDigite 1 e pressione enter para continuar...");
 						scanf("%d", &lixo);
 						fim3 = 1;
+						fim1=0;
 						break;
 					}
 					else {}
@@ -1821,6 +1870,7 @@ void movimentacao3()
 						printf("\nDigite 1 e pressione enter para continuar...");
 						scanf("%d", &lixo);
 						fim3 = 1;
+						fim1=0;
 						break;
 					}
 					else {}
@@ -1858,6 +1908,7 @@ void movimentacao3()
 						printf("\nDigite 1 e pressione enter para continuar...");
 						scanf("%d", &lixo);
 						fim3 = 1;
+						fim1=0;
 						break;
 					}
 					else {}
@@ -1887,6 +1938,7 @@ void movimentacao3()
 						printf("\nDigite 1 e pressione enter para continuar...");
 						scanf("%d", &lixo);
 						fim3 = 1;
+						fim1=0;
 						break;
 					}
 					else {}
