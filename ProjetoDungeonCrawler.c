@@ -911,7 +911,7 @@ void mapa2(char matriz2[30][30],int x2, int y2, char chave2, char porta2, char b
 										{
 											matriz2[i][j] = '#';
 										}
-										if(j==17 && (i> 23 && i<28))
+										if(j==17 && (i> 23 && i<27))
 										{
 											matriz2[i][j] = '#';
 										}
@@ -932,6 +932,10 @@ void mapa2(char matriz2[30][30],int x2, int y2, char chave2, char porta2, char b
 											matriz2[i][j] = '#';
 										}
 										if(i==24 && (j== 22 || j==24 || j==25))
+										{
+											matriz2[i][j] = '#';
+										}
+										if(i == 28 && (j >0 && j < 29))
 										{
 											matriz2[i][j] = '#';
 										}
