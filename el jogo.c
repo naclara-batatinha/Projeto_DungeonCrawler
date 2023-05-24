@@ -45,6 +45,10 @@ initconio();
   	
   	int eminemX2=18;
 	int eminemY2=25;
+	
+  	//int eminem2X2=  ;int eminem2Y2=  ;
+  	//int eminem2X2=  ;int eminem2Y2=  ;
+
 	int eminemX3=38;
 	int eminemY3=55;
 	int monstro2X= 30;
@@ -69,32 +73,7 @@ int main()
   		porta1='D';
 	
 
-		system("cls || clear");	
-		
-		
-			printf("\t\t  ####     ####       ######          ####     ####       ######          ####     ####       ######          ####     ####       ######   \n");
-	printf("\t\t  ####     ####     ##########        ####     ####     ##########        ####     ####     ##########        ####     ####     ########## \n");
-	printf("\t\t  ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####\n");
-	printf("\t\t  ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####\n");
-	printf("\t\t  ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####\n");
-	printf("\t\t  ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####\n");
-	printf("\t\t  ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####\n");
-	printf("\t\t  #############    ############       #############    ############       #############    ############       #############    ############\n");
-	printf("\t\t  #############    ############       #############    ############       #############    ############       #############    ############\n");
-	printf("\t\t  #############    ############       #############    ############       #############    ############       #############    ############\n");
-	printf("\t\t  ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####\n");
-	printf("\t\t  ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####\n");
-	printf("\t\t  ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####\n");
-	printf("\t\t  ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####\n");
-
-		
-		
-		
-		
-		
-		
-		
-			
+		system("cls || clear");		
 		printf("\n\n\n\n\n\n\n");
 		system("color 07");
 		printf("   *  #####    ##   ##  ##   ##    ####   #######   #####   ##   ##             ####   ######     ##     ##   ##  ####     #######  ######   *\n");
@@ -158,10 +137,10 @@ int main()
 			
 	}
 
-
 return 0;
 }
 
+//parte grafica do jogo
 void tutorial()
 {
 	printf("\n\n");
@@ -306,22 +285,281 @@ void historia()
 	system("cls");	
 }
 
-//void vitoria()
+void vitoria()
+{
+	printf("\n\n\n\n");
+	printf("\t\t       _______________________________________________     _______________________________________________      \n");
+	printf("\t\t    , |                                               \\   /                                    |   |      | `   \n");
+	printf("\t\t   / ||                                                \\ /                                     |   |      |  \\  \n");
+	printf("\t\t  | ||\\                                                 |                                      |   |      ||  | \n");
+	printf("\t\t  ||||/     E entao depois de percorrer e explorar cada |    -Meu heroi, meu doce heroi, se nao|   |      ||| | \n");
+	printf("\t\t  |||||                                                 |                                      |   |      \\|||| \n");
+	printf("\t\t  |||||   gruta presente naquela caverna infernal, com  |  por ti venha por mim pela honra, ou |   |      /|||| \n");
+	printf("\t\t___||||                                                 |                                      |   |      \\|||| \n");
+	printf("\t\t>___||/   dificuldades, enfrentando monstros cedentos   |  mesmo por alguem que amas. Imploro  | ^ |      /|||| \n");
+	printf("\t\t  ||||\\                                                 |                                      |/ \\|      \\|||| \n");
+	printf("\t\t  ||||/   por sangue, espinhos venenosos unido com as   |  apenas que venha me salvar.                    /|||| \n");
+	printf("\t\t  ||||\\                                                 |                                                 ||\\|| \n");
+	printf("\t\t  |||||   armadinhas implantadas pelo entao dragao,     |    As palavras resoaram no heroi como jamais    ||/|| \n");
+	printf("\t\t  |||||                                                 |                                                 ||\\|| \n");
+	printf("\t\t  |||||  o heroi quase desistiu de tudo, incluseve de   |  resoou qualquer outra na vida, entao levantou  ||||| \n");
+	printf("\t\t  ||/||                                                 |                                                 ||||| \n");
+	printf("\t\t  ||\\||  se mesmo. Convicto que iria desistir, o heroi  |   respirou fundo e foi ao encontro da princesa. ||____\n");
+	printf("\t\t  ||/||                                                 |                                                 ||   /\n");
+	printf("\t\t  ||\\||  olhou para o teto da caverna, e uma leve brisa |  As portas da ultima sala abriram e uma voz se  ||   \\ \n");
+	printf("\t\t  |||||                                                 |                                                 /|----\n");
+	printf("\t\t  |||||  lhe trouxe um cheiro familiar, doce e suave    |  se vez presente:                               \\|||| \n");
+	printf("\t\t  ||||\\                                                 |                                                 /|||| \n");
+	printf("\t\t  ||||/  junto com um sussuro:                          |   -Por todos esses anos eu me livrei de cada um.||||| \n");
+	printf("\t\t  ||| |_____/\\/_______/\\_______________________________/ \\____/\\_______________________________/\\_________| ||| \n");
+	printf("\t\t  ||  /____________________/\\__________|   |__/\\______(   )________/\\___/\\_________/\\_____________________\\  || \n");
+	printf("\t\t  (_/____________/\\__________________/\\| ^ |___________( )____________________/\\______________/\\___________ \\_) \n");
+	printf("\t\t                                       |/ \\|                                                                    \n");
+	system("pause");
+	system("cls");
+	printf("\n\n\n\n");
+	printf("\t\t       _______________________________________________     _______________________________________________      \n");
+	printf("\t\t    , |                                               \\   /                                    |   |      | `   \n");
+	printf("\t\t   / ||                                                \\ /                                     |   |      |  \\  \n");
+	printf("\t\t  | ||\\                                                 |                                      |   |      ||  | \n");
+	printf("\t\t  ||||/   Matei soldados e valentes para no fim de tudo |    -Pela coroa, claro. Pelo poder e  |   |      ||| | \n");
+	printf("\t\t  |||||                                                 |                                      |   |      \\|||| \n");
+	printf("\t\t  |||||   um completo desconhecido tirar a princesa de  |  pelas riquezas, me recuso a perder  |   |      /|||| \n");
+	printf("\t\t___||||                                                 |                                      |   |      \\|||| \n");
+	printf("\t\t>___||/   mim. Achas mesmo que permitirei tudo isso??   |  meu trono para quem quer que seja,  | ^ |      /|||| \n");
+	printf("\t\t  ||||\\                                                 |                                      |/ \\|      \\|||| \n");
+	printf("\t\t  ||||/    Foi entao que uma silhueta se formou por     |  ate mesmo minha propria filha.                 /|||| \n");
+	printf("\t\t  ||||\\                                                 |                                                 ||\\|| \n");
+	printf("\t\t  |||||   entre as sompras. Porem nao era um dragao que |    Cada palavra dita por Sr. Girotto III enfu-  ||/|| \n");
+	printf("\t\t  |||||                                                 |                                                 ||\\|| \n");
+	printf("\t\t  |||||  se escondia ali, era um homem velho e com      |  receu o heroi, que o atacou com toda força e   ||||| \n");
+	printf("\t\t  ||/||                                                 |                                                 ||||| \n");
+	printf("\t\t  ||\\||  vestes similares ao de um nobre:               |  eles começaram uma batalha e apesar do rei     ||____\n");
+	printf("\t\t  ||/||                                                 |                                                 ||   /\n");
+	printf("\t\t  ||\\||    -Nao, nao e possivel. VOSSA MAGESTADE- grita |  possuir certa idade, a experiencia o fez der-  ||   \\ \n");
+	printf("\t\t  |||||                                                 |                                                 /|----\n");
+	printf("\t\t  |||||  o heroi, incredulo- Como pode fazer isso com   |  rubar seu oponente:                            \\|||| \n");
+	printf("\t\t  ||||\\                                                 |                                                 /|||| \n");
+	printf("\t\t  ||||/  o reino? Com a propria filha?                  |   -Esse e o momento de desistir, garoto. Luta   ||||| \n");
+	printf("\t\t  ||| |_____/\\/_______/\\_______________________________/ \\____/\\_______________________________/\\_________| ||| \n");
+	printf("\t\t  ||  /____________________/\\__________|   |__/\\______(   )________/\\___/\\_________/\\_____________________\\  || \n");
+	printf("\t\t  (_/____________/\\__________________/\\| ^ |___________( )____________________/\\______________/\\___________ \\_) \n");
+	printf("\t\t                                       |/ \\|                                                                    \n");
+	system("pause");
+	system("cls");
+	printf("\n\n\n\n");
+	printf("\t\t       _______________________________________________     _______________________________________________      \n");
+	printf("\t\t    , |                                               \\   /                                    |   |      | `   \n");
+	printf("\t\t   / ||                                                \\ /                                     |   |      |  \\  \n");
+	printf("\t\t  | ||\\                                                 |                                      |   |      ||  | \n");
+	printf("\t\t  ||||/   bravamente, mas nunca passara de um moleque.  |   Dando um ultimo suspiro, a alma do |   |      ||| | \n");
+	printf("\t\t  |||||                                                 |                                      |   |      \\|||| \n");
+	printf("\t\t  |||||     Prestes a dar seu golpe fina a princesa de  |  rei deixou seu corpo ensanguentado. |   |      /|||| \n");
+	printf("\t\t___||||                                                 |                                      |   |      \\|||| \n");
+	printf("\t\t>___||/   longe, clama pelo heroi:                      |  Depois de soltar a princesa, o heroi| ^ |      /|||| \n");
+	printf("\t\t  ||||\\                                                 |                                      |/ \\|      \\|||| \n");
+	printf("\t\t  ||||/    -CORAGEM!! TE VI EM MEUS SONHOS E SEI QUE    |  pergunta de nao ha ferimentos e ela responde:  /|||| \n");
+	printf("\t\t  ||||\\                                                 |                                                 ||\\|| \n");
+	printf("\t\t  |||||   ES CAPAZ DE VENCER! CORAGEM!!                 |    -Em meu coracao, por todo o meu paito. Sei   ||/|| \n");
+	printf("\t\t  |||||                                                 |                                                 ||\\|| \n");
+	printf("\t\t  |||||   As palavras da princesa distrairam o rei e    |  do amor de meu pai por mim, porem ele amou a   ||||| \n");
+	printf("\t\t  ||/||                                                 |                                                 ||||| \n");
+	printf("\t\t  ||\\||  como um serpente, o heroi empulhou a espada em |  coroa ainda mais. Vamos ja sofri demais aqui.  ||____\n");
+	printf("\t\t  ||/||                                                 |                                                 ||   /\n");
+	printf("\t\t  ||\\||  seu peito, derrotando o ambicioso Girotto.     | 	 A princesa foi levada ao castelo e coroada    ||   \\ \n");
+	printf("\t\t  |||||                                                 |                                                 /|----\n");
+	printf("\t\t  |||||   -O poder me cegou, reconheco. perdoe-me doce  |  junto ao heroi, vivendo assim felizes para     \\|||| \n");
+	printf("\t\t  ||||\\                                                 |                                                 /|||| \n");
+	printf("\t\t  ||||/  Gigi, por comparar sua juventude a coroa.      |  sempre.                                        ||||| \n");
+	printf("\t\t  ||| |_____/\\/_______/\\_______________________________/ \\____/\\_______________________________/\\_________| ||| \n");
+	printf("\t\t  ||  /____________________/\\__________|   |__/\\______(   )________/\\___/\\_________/\\_____________________\\  || \n");
+	printf("\t\t  (_/____________/\\__________________/\\| ^ |___________( )____________________/\\______________/\\___________ \\_) \n");
+	printf("\t\t                                       |/ \\|                                                                    \n");
+	system("pause");
+	system("cls");
+	printf("\n\n\n\n\n\n\n");
+	printf("\t\t\t\t\t\t OBRIGADO POR SALVAR A PRINCESA E DERROTAR O MONSTRO.\n");
+	printf("\t\t\t\t\t\t\tNOS VEMOS EM UMA PROXIMA AVENTURA!!\n\n\n\n");	        
+	printf("\t\t\t\t* **    **     *******     **     **       **       **   **   ****     **  *\n");
+	printf("\t\t\t\t* //**  **     **/////**   /**    /**      /**      /**  /**  /**/**   /** *\n");
+	printf("\t\t\t\t*  //****     **     //**  /**    /**      /**   *  /**  /**  /**//**  /** *\n");
+	printf("\t\t\t\t*   //**     /**      /**  /**    /**      /**  *** /**  /**  /** //** /** *\n");
+	printf("\t\t\t\t*    /**     /**      /**  /**    /**      /** **/**/**  /**  /**  //**/** *\n");
+	printf("\t\t\t\t*    /**     //**     **   /**    /**      /**** //****  /**  /**   //**** *\n");
+	printf("\t\t\t\t*    /**      //*******    //*******       /**/   ///**  /**  /**    //*** *\n");
+	printf("\t\t\t\t*    //        ///////      ///////        //       //   //   //      ///  *\n");
+	printf("\n\n\t\t\t\t\tDIGITE 1 E DE ENTER PARA COLTAR AO MENU\n");
+	printf("\t\t\t\t\t==> ");			
+	scanf("%d", &lixo);
+}
 
 void derrotaMonstro()
 {
-	
+	printf("    ####     ####       ######     \n");
+	printf("    ####     ####     ##########   \n");
+	printf("    ####     ####    ####    ####   \n");
+	printf("    ####     ####    ####    ####  \n");
+	printf("    ####     ####    ####    ####   \n");
+	printf("    ####     ####    ####    ####   \n");
+	printf("    ####     ####    ####    ####      \n");
+	printf("    #############    ############    \n");
+	printf("    #############    ############  \n");
+	printf("    #############    ############    \n");
+	printf("    ####     ####    ####    ####      \n");
+	printf("    ####     ####    ####    ####     \n");
+	printf("    ####     ####    ####    ####    \n");
+	printf("    ####     ####    ####    ####     \n");
+	Sleep(300);
+	system("cls || clear");
+  	printf("    ####     ####       ######          ####     ####       ######         \n");
+	printf("    ####     ####     ##########        ####     ####     ##########    \n");
+	printf("    ####     ####    ####    ####       ####     ####    ####    ####    \n");
+	printf("    ####     ####    ####    ####       ####     ####    ####    ####     \n");
+	printf("    ####     ####    ####    ####       ####     ####    ####    ####    \n");
+	printf("    ####     ####    ####    ####       ####     ####    ####    ####      \n");
+	printf("    ####     ####    ####    ####       ####     ####    ####    ####   \n");
+	printf("    #############    ############       #############    ############ \n");
+	printf("    #############    ############       #############    ############    \n");
+	printf("    #############    ############       #############    ############    \n");
+	printf("    ####     ####    ####    ####       ####     ####    ####    ####       \n");
+	printf("    ####     ####    ####    ####       ####     ####    ####    ####     \n");
+	printf("    ####     ####    ####    ####       ####     ####    ####    ####    \n");
+	printf("    ####     ####    ####    ####       ####     ####    ####    ####      \n");
+	Sleep(300);
+	system("cls || clear");
+	printf("    ####     ####       ######          ####     ####       ######          ####     ####       ######        \n");
+	printf("    ####     ####     ##########        ####     ####     ##########        ####     ####     ##########       \n");
+	printf("    ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####     \n");
+	printf("    ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####   \n");
+	printf("    ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####       \n");
+	printf("    ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####    \n");
+	printf("    ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####     \n");
+	printf("    #############    ############       #############    ############       #############    ############    \n");
+	printf("    #############    ############       #############    ############       #############    ############     \n");
+	printf("    #############    ############       #############    ############       #############    ############    \n");
+	printf("    ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####   \n");
+	printf("    ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####    \n");
+	printf("    ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####    \n");
+	printf("    ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####      \n");
+	Sleep(300);
+	system("cls || clear");
+	printf("    ####     ####       ######          ####     ####       ######          ####     ####       ######          ####     ####       ######   \n");
+	printf("    ####     ####     ##########        ####     ####     ##########        ####     ####     ##########        ####     ####     ########## \n");
+	printf("    ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####\n");
+	printf("    ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####\n");
+	printf("    ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####\n");
+	printf("    ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####\n");
+	printf("    ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####\n");
+	printf("    #############    ############       #############    ############       #############    ############       #############    ############\n");
+	printf("    #############    ############       #############    ############       #############    ############       #############    ############\n");
+	printf("    #############    ############       #############    ############       #############    ############       #############    ############\n");
+	printf("    ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####\n");
+	printf("    ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####\n");
+	printf("    ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####\n");
+	printf("    ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####\n");
+	Sleep(1500);
+	system("cls || clear");
+	printf("\n\n\n\n\n\n\n");
+	printf("\t\t\t\t\tACHOU MESMO QUE CONSEGUIRIA ME VENCER, VERME ESTUPIDO?????\n");
+	printf("\t\t\tQUANTA INOCENCIA. QUANTA FALTA DE PREPARO. ADMITO QUE FOI UM PRAZER PRA MIM DERROTAR UMA CRIANCA COMO TU\n");
+	printf("\t\t\t\t\tVE-LO PERDER PARA MEUS MONSTROS FOI PARA MIM UMA DIVERSAO SEM IGUAL.\n");
+	printf("\t\t\t\tAPROVEITE SEU DESCANSO ETERNO DENTRO DE UM LUGAR QUE SABES QUE JAMAIS IRAO TE PROCURAR. ");
+	printf("\n\n\n");
+	printf("\t\t     ********        **       ****     ****   ********         *******     **      **   ********   *******  \n");
+	printf("\t\t    **//////**      ****     /**/**   **/**  /**/////         **/////**   /**     /**  /**/////   /**////** \n");
+	printf("\t\t   **      //      **//**    /**//** ** /**  /**             **     //**  /**     /**  /**        /**   /** \n");
+	printf("\t\t  /**             **  //**   /** //***  /**  /*******       /**      /**  //**    **   /*******   /*******  \n");
+	printf("\t\t  /**    *****   **********  /**  //*   /**  /**////        /**      /**   //**  **    /**////    /**///**  \n");
+	printf("\t\t  //**  ////**  /**//////**  /**   /    /**  /**            //**     **     //****     /**        /**  //** \n");
+	printf("\t\t   //********   /**     /**  /**        /**  /********       //*******       //**      /********  /**   //**\n");
+	printf("\t\t    ////////    //      //   //         //   ////////         ///////         //       ////////   //     // \n");	
 }
 
 void derrotaEspinho()
 {
-	
+	printf("    ####     ####       ######     \n");
+	printf("    ####     ####     ##########   \n");
+	printf("    ####     ####    ####    ####   \n");
+	printf("    ####     ####    ####    ####  \n");
+	printf("    ####     ####    ####    ####   \n");
+	printf("    ####     ####    ####    ####   \n");
+	printf("    ####     ####    ####    ####      \n");
+	printf("    #############    ############    \n");
+	printf("    #############    ############  \n");
+	printf("    #############    ############    \n");
+	printf("    ####     ####    ####    ####      \n");
+	printf("    ####     ####    ####    ####     \n");
+	printf("    ####     ####    ####    ####    \n");
+	printf("    ####     ####    ####    ####     \n");
+	Sleep(300);
+	system("cls || clear");
+  	printf("    ####     ####       ######          ####     ####       ######         \n");
+	printf("    ####     ####     ##########        ####     ####     ##########    \n");
+	printf("    ####     ####    ####    ####       ####     ####    ####    ####    \n");
+	printf("    ####     ####    ####    ####       ####     ####    ####    ####     \n");
+	printf("    ####     ####    ####    ####       ####     ####    ####    ####    \n");
+	printf("    ####     ####    ####    ####       ####     ####    ####    ####      \n");
+	printf("    ####     ####    ####    ####       ####     ####    ####    ####   \n");
+	printf("    #############    ############       #############    ############ \n");
+	printf("    #############    ############       #############    ############    \n");
+	printf("    #############    ############       #############    ############    \n");
+	printf("    ####     ####    ####    ####       ####     ####    ####    ####       \n");
+	printf("    ####     ####    ####    ####       ####     ####    ####    ####     \n");
+	printf("    ####     ####    ####    ####       ####     ####    ####    ####    \n");
+	printf("    ####     ####    ####    ####       ####     ####    ####    ####      \n");
+	Sleep(300);
+	system("cls || clear");
+	printf("    ####     ####       ######          ####     ####       ######          ####     ####       ######        \n");
+	printf("    ####     ####     ##########        ####     ####     ##########        ####     ####     ##########       \n");
+	printf("    ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####     \n");
+	printf("    ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####   \n");
+	printf("    ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####       \n");
+	printf("    ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####    \n");
+	printf("    ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####     \n");
+	printf("    #############    ############       #############    ############       #############    ############    \n");
+	printf("    #############    ############       #############    ############       #############    ############     \n");
+	printf("    #############    ############       #############    ############       #############    ############    \n");
+	printf("    ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####   \n");
+	printf("    ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####    \n");
+	printf("    ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####    \n");
+	printf("    ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####      \n");
+	Sleep(300);
+	system("cls || clear");
+	printf("    ####     ####       ######          ####     ####       ######          ####     ####       ######          ####     ####       ######   \n");
+	printf("    ####     ####     ##########        ####     ####     ##########        ####     ####     ##########        ####     ####     ########## \n");
+	printf("    ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####\n");
+	printf("    ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####\n");
+	printf("    ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####\n");
+	printf("    ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####\n");
+	printf("    ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####\n");
+	printf("    #############    ############       #############    ############       #############    ############       #############    ############\n");
+	printf("    #############    ############       #############    ############       #############    ############       #############    ############\n");
+	printf("    #############    ############       #############    ############       #############    ############       #############    ############\n");
+	printf("    ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####\n");
+	printf("    ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####\n");
+	printf("    ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####\n");
+	printf("    ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####\n");
+	Sleep(1500);
+	system("cls || clear");
+	printf("\n\n\n\n\n\n\n");
+	printf("\t\t\t\t\tACHOU MESMO QUE CONSEGUIRIA ME VENCER, VERME ESTUPIDO?????\n");
+	printf("\t\t\tQUANTA INOCENCIA. QUANTA FALTA DE PREPARO. ADMITO QUE FOI UM PRAZER PRA MIM DERROTAR UMA CRIANCA COMO TU\n");
+	printf("\t\t\t\t\tVE-LO PERDER PARA MEUS ESPINHOS FOI PARA MIM UMA DIVERSAO SEM IGUAL.\n");
+	printf("\t\t\t\tAPROVEITE SEU DESCANSO ETERNO DENTRO DE UM LUGAR QUE SABES QUE JAMAIS IRAO TE PROCURAR. ");
+	printf("\n\n\n");
+	printf("\t\t     ********        **       ****     ****   ********         *******     **      **   ********   *******  \n");
+	printf("\t\t    **//////**      ****     /**/**   **/**  /**/////         **/////**   /**     /**  /**/////   /**////** \n");
+	printf("\t\t   **      //      **//**    /**//** ** /**  /**             **     //**  /**     /**  /**        /**   /** \n");
+	printf("\t\t  /**             **  //**   /** //***  /**  /*******       /**      /**  //**    **   /*******   /*******  \n");
+	printf("\t\t  /**    *****   **********  /**  //*   /**  /**////        /**      /**   //**  **    /**////    /**///**  \n");
+	printf("\t\t  //**  ////**  /**//////**  /**   /    /**  /**            //**     **     //****     /**        /**  //** \n");
+	printf("\t\t   //********   /**     /**  /**        /**  /********       //*******       //**      /********  /**   //**\n");
+	printf("\t\t    ////////    //      //   //         //   ////////         ///////         //       ////////   //     // \n");	
 }
 
 
 void Jogo()
 {
-	//printf("\n");
 	historia();
 	descanso();	
 	while(fim1==0) //dinamica da fase1
@@ -341,15 +579,14 @@ void Jogo()
 	}
 	
 	descanso();
-	while(fim3 == 0)
+	while(fim3 == 0) //dinamica da fase 3
 	{
 
 		mapa3(matriz3, x3, y3, chave3, porta3, botao3, eminemY3, eminemX3, espinho3);
 
 		movimentacao3();
-	}
-	
-	//vitoria();		
+	}	
+	vitoria();		
 }
 
 //funções da fase 1
@@ -744,7 +981,7 @@ void movimentacao2()
 							eminemY2=25;
 								if (lifes==0) 
 								{
-									printf("Game Over!\n");
+									derrotaMonstro();
 									printf("\nDigite 1 e pressione enter para continuar...");
 									scanf("%d", &lixo);
 									fim2=1;
@@ -768,7 +1005,7 @@ void movimentacao2()
 								eminemY2=25;
 									if (lifes==0) 
 									{
-										printf("Game Over!\n");
+										derrotaEspinho();
 										printf("\nDigite 1 e pressione enter para continuar...");
 										scanf("%d", &lixo);
 										fim2=1;
@@ -801,7 +1038,7 @@ void movimentacao2()
 						eminemY2=25;
 							if (lifes==0) 
 							{
-								printf("Game Over!\n");
+								derrotaMonstro();
 								printf("\nDigite 1 e pressione enter para continuar...");
 								scanf("%d", &lixo);
 								fim2=1;
@@ -825,7 +1062,7 @@ void movimentacao2()
 							eminemY2=25;
 								if (lifes==0) 
 								{
-									printf("Game Over!\n");
+									derrotaEspinho();
 									printf("\nDigite 1 e pressione enter para continuar...");
 									scanf("%d", &lixo);
 									fim2=1;
@@ -857,7 +1094,7 @@ void movimentacao2()
 						eminemY2=25;
 							if (lifes==0) 
 							{
-								printf("Game Over!\n");
+								derrotaMonstro();
 								printf("\nDigite 1 e pressione enter para continuar...");
 								scanf("%d", &lixo);
 								fim2=1;
@@ -881,7 +1118,7 @@ void movimentacao2()
 							eminemY2=25;
 								if (lifes==0) 
 								{
-									printf("Game Over!\n");
+									derrotaEspinho();
 									printf("\nDigite 1 e pressione enter para continuar...");
 									scanf("%d", &lixo);
 									fim2=1;
@@ -912,7 +1149,7 @@ void movimentacao2()
 						eminemY2=25;
 							if (lifes==0) 
 							{
-								printf("Game Over!\n");
+								derrotaMonstro();
 								printf("\nDigite 1 e pressione enter para continuar...");
 								scanf("%d", &lixo);
 								fim2=1;
@@ -936,7 +1173,7 @@ void movimentacao2()
 							eminemY2=25;
 								if (lifes==0) 
 								{
-									printf("Game Over!\n");
+									derrotaEspinho();
 									printf("\nDigite 1 e pressione enter para continuar...");
 									scanf("%d", &lixo);
 									fim2=1;
@@ -1268,7 +1505,7 @@ void movimentacao3()
 					monstro2Y = 31;
 					if (lifes == 0)
 					{
-						printf("Game Over!\n");
+						derrotaMonstro();
 						printf("\nDigite 1 e pressione enter para continuar...");
 						scanf("%d", &lixo);
 						fim3 = 1;
@@ -1295,7 +1532,7 @@ void movimentacao3()
 					eminemY3 = 55;
 					if (lifes == 0)
 					{
-						printf("Game Over!\n");
+						derrotaEspinho();
 						printf("\nDigite 1 e pressione enter para continuar...");
 						scanf("%d", &lixo);
 						fim3 = 1;
@@ -1334,7 +1571,7 @@ void movimentacao3()
 				monstro2Y = 31;
 				if (lifes == 0)
 				{
-					printf("Game Over!\n");
+					derrotaMonstro();
 					printf("\nDigite 1 e pressione enter para continuar...");
 					scanf("%d", &lixo);
 					fim3 = 1;
@@ -1363,7 +1600,7 @@ void movimentacao3()
 				monstro2Y = 31;
 				if (lifes == 0)
 				{
-					printf("Game Over!\n");
+					derrotaEspinho();
 					printf("\nDigite 1 e pressione enter para continuar...");
 					scanf("%d", &lixo);
 					fim3 = 1;
@@ -1401,7 +1638,7 @@ void movimentacao3()
 					monstro2Y = 31;
 					if (lifes == 0)
 					{
-						printf("Game Over!\n");
+						derrotaMonstro();
 						printf("\nDigite 1 e pressione enter para continuar...");
 						scanf("%d", &lixo);
 						fim3 = 1;
@@ -1430,7 +1667,7 @@ void movimentacao3()
 					monstro2Y = 31;
 					if (lifes == 0)
 					{
-						printf("Game Over!\n");
+						derrotaEspinho();
 						printf("\nDigite 1 e pressione enter para continuar...");
 						scanf("%d", &lixo);
 						fim3 = 1;
@@ -1467,7 +1704,7 @@ void movimentacao3()
 					monstro2Y = 31;
 					if (lifes == 0)
 					{
-						printf("Game Over!\n");
+						derrotaMonstro();
 						printf("\nDigite 1 e pressione enter para continuar...");
 						scanf("%d", &lixo);
 						fim3 = 1;
@@ -1496,7 +1733,7 @@ void movimentacao3()
 					monstro2Y = 31;
 					if (lifes == 0)
 					{
-						printf("Game Over!\n");
+						derrotaEspinho();
 						printf("\nDigite 1 e pressione enter para continuar...");
 						scanf("%d", &lixo);
 						fim3 = 1;
