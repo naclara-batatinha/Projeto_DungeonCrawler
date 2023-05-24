@@ -69,7 +69,32 @@ int main()
   		porta1='D';
 	
 
-		system("cls || clear");		
+		system("cls || clear");	
+		
+		
+			printf("\t\t  ####     ####       ######          ####     ####       ######          ####     ####       ######          ####     ####       ######   \n");
+	printf("\t\t  ####     ####     ##########        ####     ####     ##########        ####     ####     ##########        ####     ####     ########## \n");
+	printf("\t\t  ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####\n");
+	printf("\t\t  ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####\n");
+	printf("\t\t  ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####\n");
+	printf("\t\t  ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####\n");
+	printf("\t\t  ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####\n");
+	printf("\t\t  #############    ############       #############    ############       #############    ############       #############    ############\n");
+	printf("\t\t  #############    ############       #############    ############       #############    ############       #############    ############\n");
+	printf("\t\t  #############    ############       #############    ############       #############    ############       #############    ############\n");
+	printf("\t\t  ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####\n");
+	printf("\t\t  ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####\n");
+	printf("\t\t  ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####\n");
+	printf("\t\t  ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####       ####     ####    ####    ####\n");
+
+		
+		
+		
+		
+		
+		
+		
+			
 		printf("\n\n\n\n\n\n\n");
 		system("color 07");
 		printf("   *  #####    ##   ##  ##   ##    ####   #######   #####   ##   ##             ####   ######     ##     ##   ##  ####     #######  ######   *\n");
@@ -281,6 +306,19 @@ void historia()
 	system("cls");	
 }
 
+//void vitoria()
+
+void derrotaMonstro()
+{
+	
+}
+
+void derrotaEspinho()
+{
+	
+}
+
+
 void Jogo()
 {
 	//printf("\n");
@@ -309,7 +347,9 @@ void Jogo()
 		mapa3(matriz3, x3, y3, chave3, porta3, botao3, eminemY3, eminemX3, espinho3);
 
 		movimentacao3();
-	}		
+	}
+	
+	//vitoria();		
 }
 
 //funções da fase 1
@@ -692,6 +732,8 @@ void movimentacao2()
 					else {}
 						if (x2==eminemX2 && y2==eminemY2) 
 						{
+							printf("CRIATURA DEMONIACA!! Me machuquei com o ataque desse verme! Preciso tomar mais cuidado\n");
+							Sleep(4000);
 							lifes--;
 							x2=15;
 							y2=15;
@@ -715,7 +757,7 @@ void movimentacao2()
 							if (matriz2[y2][x2] == espinho2) 
 							{
 								printf("\t\t\t\tDROGA!!! esses malditos espinhos em meu caminho. Acabei me machucando sem querer\n");
-								Sleep(2000);
+								Sleep(3000);
 								lifes--;
 								x2=15;
 								y2=15;
@@ -747,6 +789,8 @@ void movimentacao2()
 				eminemMove2();
 					if (x2==eminemX2 && y2==eminemY2) 
 					{
+						printf("CRIATURA DEMONIACA!! Me machuquei com o ataque desse verme! Preciso tomar mais cuidado\n");
+						Sleep(4000);
 						lifes--;
 						x2=15;
 						y2=15;
@@ -770,7 +814,7 @@ void movimentacao2()
 						if (matriz2[y2][x2] == espinho2) 
 						{
 							printf("\t\t\t\tDROGA!!! esses malditos espinhos em meu caminho. Acabei me machucando sem querer\n");
-							Sleep(2000);
+							Sleep(3000);
 							lifes--;
 							x2=15;
 							y2=15;
@@ -801,6 +845,8 @@ void movimentacao2()
 				eminemMove2();
 					if (x2==eminemX2 && y2==eminemY2) 
 					{
+						printf("CRIATURA DEMONIACA!! Me machuquei com o ataque desse verme! Preciso tomar mais cuidado\n");
+						Sleep(4000);
 						lifes--;
 						x2=15;
 						y2=15;
@@ -824,7 +870,7 @@ void movimentacao2()
 						if (matriz2[y2][x2] == espinho2) 
 						{
 							printf("\t\t\t\tDROGA!!! esses malditos espinhos em meu caminho. Acabei me machucando sem querer\n");
-							Sleep(2000);
+							Sleep(3000);
 							lifes--;
 							x2=15;
 							y2=15;
@@ -854,6 +900,8 @@ void movimentacao2()
 				eminemMove2();
 					if (x2==eminemX2 && y2==eminemY2) 
 					{
+						printf("CRIATURA DEMONIACA!! Me machuquei com o ataque desse verme! Preciso tomar mais cuidado\n");
+						Sleep(4000);
 						lifes--;
 						x2=15;
 						y2=15;
@@ -877,7 +925,7 @@ void movimentacao2()
 						if (matriz2[y2][x2] == espinho2) 
 						{
 							printf("\t\t\t\tDROGA!!! esses malditos espinhos em meu caminho. Acabei me machucando sem querer\n");
-							Sleep(2000);
+							Sleep(3000);
 							lifes--;
 							x2=15;
 							y2=15;
@@ -1203,6 +1251,8 @@ void movimentacao3()
 				else {}
 				if ((x3 == eminemX3 && y3 == eminemY3) || (x3 == monstro2X && y3 == monstro2Y))
 				{
+					printf("CRIATURA DEMONIACA!! Me machuquei com o ataque desse verme! Preciso tomar mais cuidado\n");
+					Sleep(4000);
 					lifes--;
 					x3 = 30;
 					y3 = 30;
@@ -1231,6 +1281,7 @@ void movimentacao3()
 				if (matriz3[y3][x3] == espinho3)
 				{
 					printf("\t\t\t\tDROGA!!! esses malditos espinhos em meu caminho. Acabei me machucando sem querer\n");
+					Sleep(3000);
 					lifes--;
 					x3 = 30;
 					y3 = 30;
@@ -1266,6 +1317,8 @@ void movimentacao3()
 			monstro_movimentacao();
 			if ((x3 == eminemX3 && y3 == eminemY3) || (x3 == monstro2X && y3 == monstro2Y))
 			{
+				printf("CRIATURA DEMONIACA!! Me machuquei com o ataque desse verme! Preciso tomar mais cuidado\n");
+				Sleep(4000);
 				lifes--;
 				x3 = 30;
 				y3 = 30;
@@ -1294,6 +1347,7 @@ void movimentacao3()
 			if (matriz3[y3][x3] == espinho3)
 			{
 				printf("\t\t\t\tDROGA!!! esses malditos espinhos em meu caminho. Acabei me machucando sem querer\n");
+				Sleep(3000);
 				lifes--;
 				x3 = 30;
 				y3 = 30;
@@ -1330,6 +1384,8 @@ void movimentacao3()
 				monstro_movimentacao();
 				if ((x3 == eminemX3 && y3 == eminemY3) || (x3 == monstro2X && y3 == monstro2Y))
 				{
+					printf("CRIATURA DEMONIACA!! Me machuquei com o ataque desse verme! Preciso tomar mais cuidado\n");
+					Sleep(4000);
 					lifes--;
 					x3 = 30;
 					y3 = 30;
@@ -1358,6 +1414,7 @@ void movimentacao3()
 				if (matriz3[y3][x3] == espinho3)
 				{
 					printf("\t\t\t\tDROGA!!! esses malditos espinhos em meu caminho. Acabei me machucando sem querer\n");
+					Sleep(3000);
 					lifes--;
 					x3 = 30;
 					y3 = 30;
@@ -1393,6 +1450,8 @@ void movimentacao3()
 				monstro_movimentacao();
 				if ((x3 == eminemX3 && y3 == eminemY3) || (x3 == monstro2X && y3 == monstro2Y))
 				{
+					printf("CRIATURA DEMONIACA!! Me machuquei com o ataque desse verme! Preciso tomar mais cuidado\n");
+					Sleep(4000);
 					lifes--;
 					x3 = 30;
 					y3 = 30;
