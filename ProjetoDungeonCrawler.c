@@ -363,9 +363,9 @@ void vitoria()
 	printf("\t\t  ||||\\                                                 |                                                 ||\\|| \n");
 	printf("\t\t  |||||   entre as sompras. Porem nao era um dragao que |    Cada palavra dita por Sr. Girotto III enfu-  ||/|| \n");
 	printf("\t\t  |||||                                                 |                                                 ||\\|| \n");
-	printf("\t\t  |||||  se escondia ali, era um homem velho e com      |  receu o heroi, que o atacou com toda forÃ§a e   ||||| \n");
+	printf("\t\t  |||||  se escondia ali, era um homem velho e com      |  receu o heroi, que o atacou com toda força e   ||||| \n");
 	printf("\t\t  ||/||                                                 |                                                 ||||| \n");
-	printf("\t\t  ||\\||  vestes similares ao de um nobre:               |  eles comeÃ§aram uma batalha e apesar do rei     ||____\n");
+	printf("\t\t  ||\\||  vestes similares ao de um nobre:               |  eles começaram uma batalha e apesar do rei     ||____\n");
 	printf("\t\t  ||/||                                                 |                                                 ||   /\n");
 	printf("\t\t  ||\\||    -Nao, nao e possivel. VOSSA MAGESTADE- grita |  possuir certa idade, a experiencia o fez der-  ||   \\ \n");
 	printf("\t\t  |||||                                                 |                                                 /|----\n");
@@ -631,7 +631,7 @@ void Jogo()
 	}else{}
 }
 
-//funÃ§Ãµes da fase 1
+//funções da fase 1
 void mapa1(char matriz1[15][15],int x1, int y1, char chave1, char porta1)
 {		
 	int i,j;	
@@ -639,26 +639,26 @@ void mapa1(char matriz1[15][15],int x1, int y1, char chave1, char porta1)
     	{
         	for(j = 0; j < 15; j++)
         	{	
-        		if(i==y1 && j==x1)//posiÃ§Ã£o do jogador 
+        		if(i==y1 && j==x1)//posição do jogador 
 				{
 					matriz1[i][j]='&';
 				}
 				else
 				{
-        			if(i==14 && j==7)//posiÃ§Ã£o da porta 
+        			if(i==14 && j==7)//posição da porta 
 					{
 						matriz1[i][j]=porta1;
 					}
 					else
 					{ 
-        				if(i==3 && j==7)//posiÃ§Ã£o da chave 
+        				if(i==3 && j==7)//posição da chave 
 						{
 							matriz1[i][j]=chave1;
 						}
 						else
 						{
 									
-   							if(i==0 || i==14)//construÃ§Ãµa da parede 
+   							if(i==0 || i==14)//construçõa da parede 
 							{
 								printf("\n");
 			 	 	 	 	 	matriz1[i][j]='*';printf("\n");
@@ -754,7 +754,7 @@ void movimentacao1()
 		}
 }
 
-//funÃ§Ãµes da fase2
+//funções da fase2
 void mapa2(char matriz2[30][30],int x2, int y2, char chave2, char porta2, char botao2, int eminemY2, int eminemX2, char espinho2) 
 {
 	int i,j;
@@ -1647,7 +1647,7 @@ void mapa3(char matriz3[60][60], int x3, int y3, char chave3, char porta3, char 
 	printf("\n\n");
 	for(i = 0; i < 60; i++)
 	{
-		printf("\t");
+		printf("\t\t\t\t\t  ");
 		for(j = 0; j < 60; j++)
 		{
 			printf(" ");
